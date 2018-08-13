@@ -1,0 +1,11 @@
+Create back-end API with Node/Express
+
+Test with Postman
+
+Explore the Bootstrap theme
+
+Implement React and connect with the backend
+
+Implement Redux for state management
+
+Prepare, build & deploy to Heroku
