@@ -33,8 +33,7 @@ const ProfileSchema = new Schema({
         required: true
     },
     bio: {
-        type: [String],
-        required: true
+        type: String,
     },
     githubusername: {
         type: String
@@ -97,7 +96,7 @@ const ProfileSchema = new Schema({
                 type: String
             }
         }],
-    social: [
+    social:
         {
             youtube: {
                 type: String
@@ -115,7 +114,7 @@ const ProfileSchema = new Schema({
                 type: String
             }
 
-        }],
+        },
     date: {
         type: Date,
         default: Date.now
