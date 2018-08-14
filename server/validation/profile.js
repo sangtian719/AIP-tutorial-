@@ -14,16 +14,16 @@ module.exports = function validationProfileInput(data) {
         errors.handle = 'Handle needs to between and 4 characters';
     }
 
-    if(!validator.isEmpty(data.handle))
+    if(validator.isEmpty(data.handle))
     {
         errors.handle = 'Profile handle is required';
     }
 
-    if(!validator.isEmpty(data.status))
+    if(validator.isEmpty(data.status))
     {
         errors.status= 'Status field is required';
     }
-    if(!validator.isEmpty(data.skills))
+    if(validator.isEmpty(data.skills))
     {
         errors.skills= 'Skills field is required';
     }
