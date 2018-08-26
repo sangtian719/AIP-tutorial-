@@ -30,7 +30,7 @@ router.get('/', (req, res) =>
     Post.find()
         .sort({data: -1})
         .then(posts => res.json(posts))
-        .catch(err => res.status(404)).json({nopostfound: 'No post found'});
+        .catch(err => res.status(404).json({nopostfound: 'No post found'}));
 });
 
 
@@ -80,7 +80,7 @@ router.post('/', passport.authenticate('jwt', { session: false}),
 router.delete('/:id', passport.authenticate('jwt', { session: false}), (req, res)=>
 {
     Profile.findOne({ user: req.user.id })
-        .then(profile => {
+        .then( profile => {
             Post.findById(req.params.id)
                 .then(post => {
                     // Check for post owner
