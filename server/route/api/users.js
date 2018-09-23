@@ -66,12 +66,12 @@ router.post('/register', (req, res)=> {
 
                 });
             });
-            console.log('register success');
+            console.log('auth success');
         }
     });
 });
 
-//  @route  GET api/users/login
+//  @route  Post api/users/login
 //  @desc   Login user / Returning JWT Token
 //  @access Public
 router.post('/login', (req, res) => {
