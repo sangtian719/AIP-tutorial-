@@ -1,0 +1,12 @@
+{
+  "name": "SocketIo",
+  "version": "1.0.0",
+  "description": "This is Socket.Io App Demo",
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1"
+  }
+}
