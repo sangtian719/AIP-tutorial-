@@ -106,9 +106,9 @@ Login.propTypes = {
 
 };
 
-const mapStateProps = state => ({
+const mapStateToProps = state => ({
     auth: state.auth,
     errors: state.errors
 });
 
-export default connect(mapStateProps, { loginUser })(Login);
+export default connect(mapStateToProps, { loginUser })(Login);
