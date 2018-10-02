@@ -11,7 +11,9 @@ const store = createStore(
     rootReducer,
     initialState,
     compose(applyMiddleware(...middleware),
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
+        // If you use Mac and Safari, do not use this code below:
+        // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
         )
 );
 
